@@ -5,7 +5,7 @@ Available API calls (on localhost:8080 by default, also assumes a database on lo
 
 ## /getAllItems
 - Type: GET
-- Keys:
+- Keys: 
 Returns all stored todoItems.
 
 ## /getItem
