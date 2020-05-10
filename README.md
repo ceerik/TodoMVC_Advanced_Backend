@@ -3,7 +3,7 @@ Spring boot-based restful API for for interfacing between the TodoMVC_Advanced_F
 
 The calls available are the bare minimum required, with the addition of getItem for optimization purposes (one could otherwise hypothetically use getAllItems and iterate over them to get a specific item).  
 
-Database columns:  
+### Database columns:  
 - id : int  
 - todoText : String(140)  
 - completed : binary(1)  
