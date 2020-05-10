@@ -3,7 +3,7 @@ Spring boot-based restful API for for interfacing between the TodoMVC_Advanced_F
 
 The calls available are the bare minimum required, with the addition of getItem for optimization purposes (one could otherwise hypothetically use getAllItems and iterate over them to get a specific item).  
   
-There is perhaps a case to be made for putting the logic for toggling completion of all items in the backend (and creating a new call for that logic) instead of the frontend JS, similar to /deleteCompletedItems; it would probably result in less overhead as there would be only be a couple of API-calls from to frontend instead of n+1 where n is the number of items having their completed column toggled. In reality this is unlikely to have much of an impact on the end user experience as the number of todoItems present at any time is estimated to be no more man a couple of dozen or so; and so the decision was made to keep that bit of logic in the frontend as a time-saving measure (for the developer, that is).  
+There is perhaps a case to be made for putting the logic for toggling completion of all items in the backend (and creating a new call for that logic) instead of in the frontend JS, similar to /deleteCompletedItems; it would probably result in less overhead as there would be only be a couple of API-calls from to frontend instead of n+1 where n is the number of items having their completed column toggled. In reality this is unlikely to have much of an impact on the end user experience as the number of todoItems present at any time is estimated to be no more man a couple of dozen or so; and so the decision was made to keep that bit of logic in the frontend as a time-saving measure (for the developer, that is).  
 
 ### Database columns:  
 - id : int  
