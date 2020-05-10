@@ -8,7 +8,8 @@ The calls available are the bare minimum required, with the addition of getItem 
 - todoText : String(140)  
 - completed : binary(1)  
   
-Other information such as viewState (showing all/active/completed items) are not stored as they do not contain any data relevant to each item, it's purely a view-focused sorting.    
+Other information such as viewState (showing all/active/completed items) are not stored as they do not contain any data relevant to each item, it's purely a view-focused sorting.  
+  
 There is perhaps a case to be made for putting the logic for toggling completion of all items in the backend instead of the frontend JS, similar to /deleteCompletedItems; it would probably result in less overhead as there would be only be a couple of API-calls from to frontend instead of n+1 where n is the number of items having their completed column toggled. In reality this is unlikely to have much of an impact on the end user experience as the number of todoItems present at any time is estimated to be no more man a couple of dozen or so; and so the decision was made to keep that bit of logic in the frontend as a time-saving measure (for the developer, that is).  
 
 ## Available API calls (on localhost:8080 by default, also assumes a MySQL database on localhost:3306):
