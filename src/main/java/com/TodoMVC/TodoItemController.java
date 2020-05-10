@@ -36,11 +36,13 @@ public class TodoItemController {
 	}
 	
 	@PostMapping(path="/addItem")
-	public void addItem (@RequestParam String todoText) {
+	public int addItem (@RequestParam String todoText) {
 		TodoItem t = new TodoItem();
 		t.setTodoText(todoText);
 		t.setCompleted(false);
 		todoItemRepository.save(t);
+		System.out.print(t.getId());
+		return t.getId();
 	}
 	
 	@PostMapping(path="/setCompleted")
