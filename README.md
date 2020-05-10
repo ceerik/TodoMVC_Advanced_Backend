@@ -10,7 +10,7 @@ There is perhaps a case to be made for putting the logic for toggling completion
 - todoText : String(140)  
 - completed : binary(1)  
   
-Other information such as viewState (showing all/active/completed items) are not stored as they do not contain any data relevant to each item, it's purely a view-focused sorting.  
+Other information such as viewState (showing all/active/completed items) are not stored as they do not contain any data relevant to each item, it's purely a view-centric sorting.  
 
 
 ## Available API calls (on localhost:8080 by default, also assumes a MySQL database on localhost:3306):
